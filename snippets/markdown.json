@@ -32,5 +32,5 @@
 	"amos": {
 		"prefix": "amos",
 		"body": [ "{% sc amossays %}", "$1", "{% endsc %}" ],
-	},
+	}
 }
