@@ -82,14 +82,4 @@ return {
     --   },
     -- }
   end,
-
-  plugins = {
-    {
-      "L3MON4D3/LuaSnip",
-      config = function(plugin, opts)
-        require "plugins.configs.luasnip" (plugin, opts) -- include the default astronvim config that calls the setup call
-        require("luasnip.loaders.from_vscode").load(nil) -- load snippets paths
-      end,
-    },
-  }
 }

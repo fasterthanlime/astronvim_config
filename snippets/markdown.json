@@ -1,10 +1,18 @@
 {
 	"shell": {
-		"prefix": "`sh",
+		"prefix": "sh",
 		"body": [ "```shell", "$1", "```" ]
 	},
+	"go": {
+		"prefix": "go",
+		"body": [ "```go", "$1", "```" ]
+	},
+	"js": {
+		"prefix": "js",
+		"body": [ "```js", "$1", "```" ]
+	},
 	"rust": {
-		"prefix": "`rs",
+		"prefix": "rs",
 		"body": [ "```rust", "$1", "```" ]
 	},
 	"tip": {

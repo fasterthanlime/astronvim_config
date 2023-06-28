@@ -33,6 +33,14 @@ return {
   --     luasnip.filetype_extend("javascript", { "javascriptreact" })
   --   end,
   -- },
+  --
+  {
+    "L3MON4D3/LuaSnip",
+    config = function(plugin, opts)
+      require("plugins.configs.luasnip")(plugin, opts)                                  -- include the default astronvim config that calls the setup call
+      require("luasnip.loaders.from_vscode").load { paths = { "./lua/user/snippets" } } -- load snippets paths
+    end,
+  },
   -- {
   --   "windwp/nvim-autopairs",
   --   config = function(plugin, opts)
