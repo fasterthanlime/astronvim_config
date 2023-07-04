@@ -7,7 +7,7 @@ return {
 	  	suggestion = {
 	  		auto_trigger = true,
 	  		debounce = 150,
-	  	}
+	  	},
 	  })
 	end,
 }
