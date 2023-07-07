@@ -1,3 +1,11 @@
+local colorscheme
+local hr = tonumber(os.date('%H', os.time()))
+if hr > 6 and hr < 19 then
+  colorscheme = 'dayfox'
+else -- night
+  colorscheme = 'nightfox'
+end
+
 return {
   -- Configure AstroNvim updates
   updater = {
@@ -19,7 +27,9 @@ return {
 
   -- Set colorscheme to use
   -- colorscheme = "astrodark",
-  colorscheme = "dayfox",
+  -- colorscheme = "dayfox",
+  -- colorscheme = "nightfox",
+  colorscheme = colorscheme,
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
